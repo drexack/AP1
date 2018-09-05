@@ -1,0 +1,55 @@
+\ProvidesPackage{v23}
+
+% ===== Maße Papier =====
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=60mm,
+	headsep=40mm
+}
+% =======================
+
+\usepackage[utf8]{inputenx}
+\usepackage{lmodern}
+
+\usepackage[german]{babel}
+
+
+
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.5ex}
+
+\usepackage{fancyhdr}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+
+\usepackage{booktabs}
+
+\usepackage[colorlinks]{hyperref}
+
+% ====== Versuchsdetails ======
+\newcommand{\name}{Patrick Sell}					% Name d. AuthorInnen
+\newcommand{\assistent}{Max Mustermann}				% Name d. AssistentIn
+\newcommand{\versuch}{Versuch 24: Schallwellen}		% Name des Versuchs
+\newcommand{\vdate}{07.09.2018}					% Datum
+% =============================
+
+% ===== Kopfzeile =====
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} 
+\lhead{\name}
+\chead{Physiklabor für AnfängerInnen \\ Ferienpraktikum im Sommersemester 2018}
+\rhead{\versuch}
+% =======================
+
+% ====== Titel =====
+\title{Physiklabor für AnfängerInnen \\ Ferienpraktikum im Sommersemester 2018\\[6mm]{\Huge\textbf{\versuch}}\\[3mm](durchgeführt am \vdate\ bei Assistent*in \assistent)}
+\author{Patrick Sell \\ {\footnotesize patrick.sell@saturn.uni-freiburg.de}}
+\date{\today}
+% ==================
